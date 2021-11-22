@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página de concato de Adrian Crow, tatuadora del estudio de Adrian Crow, aqui encontras un formulario de contacto para consultarle todas tus dudas."/>
+  <meta name="keyword" content="tatuajes, Adrian Crow, cursos, seminarios, portfolio, equipo, formulario, contacto"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Animacion logo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Nunito:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../build/css/app.css" />
+  <title>Contacto - Adrian Crow</title>
+</head>
+
+<body>
+  <header>
+
+    <nav class="navegacion">
+      <a href="../index.html">
+        <div class="nav-header__logo">
+          <picture class="animate__animated animate__zoomInDown">
+            <source srcset="../build/img/logoAdrianCrow_grey.avif" type="image/avif">
+            <source srcset="../build/img/logoAdrianCrow_grey.webp" type="image/webp">
+            <img loading="lazy" width="200" height="200" src="../build/img/logoAdrianCrow_grey.png"
+              alt="logo Adrian Crow" title="Logo Adrian Crow">
+          </picture>
+          <h2>Adrian Crow</h2>
+        </div>
+      </a>
+      <ul class="nav-principal">
+        <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../index.html#portfolio">Portfolio</a></li>
+          <li><a href="../index.html#equipo">Team</a></li>
+          <li><a href="../index.html#seminarios">Seminarios</a></li>
+          <li><a href="../index.html#cursos">Cursos</a></li>
+          <li><a href="cuidados.html">Cuidados</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="header__marca">
+      <a href="../index.html">
+        <h1>Adrian Crow</h1>
+        <h2>black &amp; grey</h2>
+      </a>
+      <div class="header__fondo">
+        <picture class="animate__animated animate__zoomInDown">
+          <source srcset="../build/img/background_header3-3.avif" type="image/avif">
+          <source srcset="../build/img/background_header3-3.webp" type="image/webp">
+          <img loading="lazy" width="200" height="200" src="../build/img/background_header3-3.png" alt="Adrian Crow"
+            title="Logo Adrian Crow">
+        </picture>
+      </div>
+
+  </header>
+
+
+
+
+  <main class="formulario__contacto contenedor">
+
+
+    <picture>
+      <source srcset="../build/img/adrian_face.avif" type="image/avif">
+      <source srcset="../build/img/adrian_face.webp" type="image/webp">
+      <img loading="lazy" width="200" height="200" src="../build/img/adrian_face.png" alt="seminario Black and Grey"
+        title="seminarios Black and Grey">
+    </picture>
+
+    <form class="contenedor" action="#" method="post" enctype="application/x-www-form-urlencoded">
+      <fieldset class="datos_personales ">
+        <div>
+          <div class="form__datosPersonales">
+            <label for="name">Nombre</label>
+            <input type="text" name="" id="name" required />
+          </div>
+          <div class="form__datosPersonales">
+            <label for="mail">Contacto</label>
+            <input type="email" name="" id="mail" required />
+          </div>
+        </div>
+        <div>
+          <div class="form__datosPersonales">
+            <label for="surname">Apellido</label>
+            <input type="text" name="" id="surname" required />
+          </div>
+          <div class="form__datosPersonales">
+            <label for="cel">Teléfono</label>
+            <input type="tel" name="" id="cel" required />
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="form__layout">
+          <div>
+            <p>Elegí tu estilo</p>
+            <select name="estilos" id="estilos">
+              <option value="blackwork">Blackwork</option>
+              <option value="tradicional">Old School</option>
+              <option value="neoTradicional">New School</option>
+              <option value="Dotwork">Dotwork</option>
+              <option value="blakAndGrey">Black &amp; Grey</option>
+              <option value="acuarela">Acuarela</option>
+              <option value="japones">Japonés</option>
+              <option value="realista">Realista</option>
+              <option value="Ornamental">Ornamental</option>
+              <option value="tribal">Tribal</option>
+              <option value="gotico">Gótico</option>
+              <option value="brush">Brush</option>
+            </select>
+          </div>
+          <div>
+            <p>Elegi tu tatuador</p>
+            <select name="tatuador" id="tatuador">
+              <option value="adrian">Adrian</option>
+              <option value="belen">Belu</option>
+              <option value="facundo">Facu</option>
+              <option value="marianela">Marianela</option>
+            </select>
+          </div>
+        </div>
+        <div class="form__layout">
+          <div class="form__alegias">
+            <p>Alergías</p>
+            <input type="radio" name="alergia" id="si">
+            <label for="si">Si</label>
+            <input type="radio" name="alergia" id="no">
+            <label for="no">No</label>
+          </div>
+          <textarea name="alergia" id="" cols="30" rows="10" placeholder="especificá tu alergía"></textarea>
+        </div>
+        <div>
+          <p>¿Eres mayor de edad?</p>
+          <input type="checkbox" name="mayor" id="si">
+          <label for="si">Si</label>
+          <input type="checkbox" name="menor" id="no">
+          <label for="no">No</label>
+        </div>
+        <p>En caso de ser necesrio podes agregar un comentario para ayudarnos a mejorar tu presupuesto.
+        </p>
+        <textarea name="cuerpo" id="cuerpo" cols="30" rows="10"
+          placeholder="Aquí podes especificar mas sobre tu consulta"></textarea>
+      </fieldset>
+      <input class="boton" type="submit" name="" value="Enviar" id="">
+      <input class="boton_limpiar" type="reset" name="" value="Limpiar" id="">
+    </form>
+
+
+  </main>
+  <footer class="footer ">
+    <div>
+      <nav class="navegacion-footer contenedor">
+        <ul class="nav-footer">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../index.html#portfolio">Portfolio</a></li>
+          <li><a href="../index.html#equipo">Team</a></li>
+          <li><a href="../index.html#seminarios">Seminarios</a></li>
+          <li><a href="../index.html#cursos">Cursos</a></li>
+          <li><a href="cuidados.html">Cuidados</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="paginas contenedor">
+      <section>
+        <h2>de interes</h2>
+        <ul>
+          <li><a href="#">Iron Black Tattoo</a></li>
+          <li><a href="#">pagina de interes</a></li>
+          <li><a href="#">pagina de interes</a></li>
+          <li><a href="#">pagina de interes</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Sponsor</h2>
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/inkplaylatam/?hl=es-la" target="_blank">Ink Play</a>
+          </li>
+          <li><a href="#">Dinamic</a></li>
+          <li><a href="#">Supreme</a></li>
+        </ul>
+      </section>
+    </div>
+    <section class="copy">&copy; CC Design | Francisco Acuña</section>
+    <!-- <div>
+      <img src="img/logoUglyBoys.png" alt="logo Ugly Boys Tattoo Studio" title="logo Ugly Boys Tattoo Studio" />
+    </div> -->
+  </footer>
+</body>
+
+</html>

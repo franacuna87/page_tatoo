@@ -1,0 +1,8 @@
+buid
+node_modules
+src
+gulpfile.js
+package.json
+package-lock.json
+pageTatoo_deployment
+style
