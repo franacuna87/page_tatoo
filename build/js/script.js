@@ -1,6 +1,17 @@
-const btn = document.querySelector('.btn_menu');
-const nave = document.querySelector('.nav-principal');
+let navegacion = document.querySelector('.nav-principal');
+let navItem = document.querySelectorAll('.nav-item a');
 
-btn.addEventListener('click', () =>{
-    nave.classList.toggle('show')
+console.log(navItem);
+navItem.forEach (item =>{
+    
+    if(item.className === 'active'){
+        //console.log(`tiene la calse ${item.classList}`);
+        item.classList.add('active');
+    }else{
+        item.classList.add('active');
+        //console.log('no tiene clase');
+    }
+    
 });
+/* console.log(item.classList.contains('active')); */
+   
