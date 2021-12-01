@@ -440,6 +440,7 @@ header {
 
 .header__marca {
   display: none;
+  background-color: #22272f;
 }
 @media (min-width: 768px) {
   .header__marca {
@@ -477,37 +478,53 @@ header {
 
 .navegacion {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  position: sticky;
+  top: 0rem;
+  background-color: #22272f;
+  z-index: 20;
 }
 @media (min-width: 768px) {
   .navegacion {
-    /*  flex-direction: row; */
-    /*     text-align: center; */
-    justify-content: space-between;
-    padding: 2rem 0;
     position: sticky;
-    top: 0;
-    background-color: #1b1b1b;
+    top: 10rem;
     z-index: 20;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+.navegacion .btn_menu {
+  color: #d4d4d4;
+  text-align: center;
+  font-size: 3.5rem;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .navegacion .btn_menu {
+    display: none;
   }
 }
 
 .nav-principal {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  display: none;
+  width: 100vw;
+  left: 0;
+  top: 10rem;
+  position: absolute;
+  background-color: #22272f;
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-bottom: 5rem;
 }
 @media (min-width: 768px) {
   .nav-principal {
+    padding: 1.5rem 0;
+    top: -10rem;
     display: flex;
     flex-direction: row;
-    align-content: center;
-    padding-bottom: 0;
+    justify-content: space-evenly;
   }
 }
 .nav-principal li {
@@ -533,50 +550,75 @@ header {
 
 .nav-header__logo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  margin: 5rem 0;
+  margin: 2rem 0;
 }
-@media (min-width: 768px) {
-  .nav-header__logo {
-    flex-direction: row;
-    margin: 0;
-  }
-  .nav-header__logo h1,
-.nav-header__logo h2,
+.nav-header__logo h2 {
+  display: none;
+  font-family: "Amiri", serif;
+  font-size: 3rem;
+  color: #d4d4d4;
+  margin: 0 0 0 0.5rem;
+}
 .nav-header__logo h3 {
-    display: none;
-  }
+  display: none;
 }
 .nav-header__logo picture img {
   width: auto;
-  height: 10rem;
+  height: 6rem;
 }
 @media (min-width: 768px) {
   .nav-header__logo picture img {
     display: none;
   }
 }
-.nav-header__logo h2 {
-  font-family: "Amiri", serif;
-  font-size: 5rem;
-  color: #d4d4d4;
-  margin: 2rem 0 0 0;
+@media (min-width: 768px) {
+  .nav-header__logo picture img {
+    flex-direction: row;
+    margin: 0;
+  }
+  .nav-header__logo picture img h1,
+.nav-header__logo picture img h2,
+.nav-header__logo picture img h3 {
+    display: none;
+  }
 }
-.nav-header__logo h3 {
-  font-family: "Amiri", serif;
-  font-size: 3rem;
-  color: #d4d4d4;
-  margin: 2rem 0 0 0;
+@media (min-width: 768px) {
+  .nav-header__logo h2 {
+    font-family: "Amiri", serif;
+    font-size: 5rem;
+    color: #d4d4d4;
+    margin: 2rem 0 0 0;
+  }
+  .nav-header__logo h3 {
+    font-family: "Amiri", serif;
+    font-size: 3rem;
+    color: #d4d4d4;
+    margin: 2rem 0 0 0;
+  }
+}
+
+.show {
+  display: block;
+  padding-bottom: 1rem;
+  background-color: #22272f;
+  z-index: 20;
 }
 
 .historia {
   color: #d4d4d4;
   text-align: center;
 }
-.historia h2 {
-  font-size: 3.5rem;
-  text-transform: uppercase;
+.historia .marca-movil {
+  font-family: "Amiri", serif;
+  margin: 1rem auto;
+  color: #a42d56;
+}
+@media (min-width: 768px) {
+  .historia .marca-movil {
+    display: none;
+  }
 }
 .historia h3 {
   font-size: 3rem;
@@ -590,6 +632,12 @@ header {
   border-radius: 0.5rem;
 }
 
+.article__historia-adrian {
+  padding-bottom: 5rem;
+}
+.article__historia-adrian .article__contenido-historia {
+  margin-bottom: 5rem;
+}
 @media (min-width: 768px) {
   .article__historia-adrian {
     display: grid;
@@ -679,102 +727,27 @@ header {
 .section__description {
   text-align: start;
   padding: 1rem;
-}
-
-.seminario {
-  color: #d4d4d4;
-  text-align: center;
-  background-color: #d4d4d4;
-  padding: 3rem 0;
-}
-.seminario h3 {
-  text-transform: uppercase;
-  color: #1b1b1b;
-  margin: 1.5rem 0;
-}
-
-@media (min-width: 768px) {
-  .seminario__informacion {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
-  }
-}
-
-.section__seminario-tarjeta {
-  background-color: #1b1b1b;
-  border-radius: 0.5rem;
-  padding-bottom: 3rem;
   margin-bottom: 3rem;
 }
-.section__seminario-tarjeta img {
-  border-radius: 0.5rem;
-}
-.section__seminario-tarjeta h3 {
-  color: #a42d56;
-}
-@media (min-width: 768px) {
-  .section__seminario-tarjeta {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-  }
-  .section__seminario-tarjeta .seminario__contenido {
-    width: 50%;
-    align-self: center;
-  }
-  .section__seminario-tarjeta picture {
-    width: 50%;
-  }
-}
 
-.seminario__descripcion {
-  text-align: start;
-  padding: 1rem;
-}
-
-.cursos {
-  text-align: center;
-  background-color: #1b1b1b;
-  padding: 2rem 0 5rem 0;
-}
-.cursos h3 {
-  text-transform: uppercase;
-  font-size: 3rem;
-  color: #d4d4d4;
-}
-.cursos .video {
-  border-radius: 0.5rem;
-}
-.cursos .curso__contenido {
-  text-align: start;
-}
-@media (min-width: 768px) {
-  .cursos .fondo_video {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0rem;
-  }
-}
-
-/* .cursossssssssssssssssssss {
+/* .seminario {
   color: v.$grisClaro;
   text-align: center;
-  background-color: v.$negro;
+  background-color: v.$grisClaro;
   padding: 3rem 0;
   h3 {
     text-transform: uppercase;
-    color: v.$grisClaro;
+    color: v.$negro;
     margin: 1.5rem 0;
   }
 }
-.curso__informacion {
+.seminario__informacion {
   @include m.tablet {
     @include m.grid-row(2, 1rem);
   }
 }
-.section__curso-tarjeta {
-  background-color: v.$grisClaro;
+.section__seminario-tarjeta {
+  background-color: v.$negro;
   border-radius: 0.5rem;
   padding-bottom: 3rem;
   margin-bottom: 3rem;
@@ -788,7 +761,7 @@ header {
     display: flex;
     flex-direction: row;
     padding: 0;
-    .curso__contenido {
+    .seminario__contenido {
       width: 50%;
       align-self: center;
     }
@@ -797,11 +770,46 @@ header {
     }
   }
 }
-.curso__descripcion {
-  color: v.$negro;
+.seminario__descripcion {
   text-align: start;
   padding: 1rem;
+  margin-bottom: 3rem;
 } */
+.cursos {
+  text-align: center;
+  background-color: #1b1b1b;
+  padding: 2rem 0 5rem 0;
+}
+.cursos h3 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #d4d4d4;
+}
+.cursos img {
+  border-radius: 0.5rem;
+}
+.cursos .curso__descripcion {
+  margin-bottom: 4rem;
+}
+.cursos .video {
+  border-radius: 0.5rem;
+}
+@media (min-width: 768px) {
+  .cursos .fondo_video {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0rem;
+  }
+  .cursos .fondo_video .curso__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .cursos .fondo_video .curso__contenido .cursos__subtitulo {
+    margin: 2rem auto;
+  }
+}
+
 .multimedia {
   text-align: center;
   color: #1b1b1b;
@@ -815,6 +823,99 @@ header {
 }
 .audio iframe {
   border-radius: 0.5rem;
+}
+
+.testimoniales {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.testimoniales h2 {
+  color: #d4d4d4;
+  text-transform: uppercase;
+}
+.testimoniales .tarjetas-testimoniales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .testimoniales .tarjetas-testimoniales {
+    flex-direction: row;
+  }
+}
+.testimoniales .card_testimonial {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: #d4d4d4;
+  border-radius: 2rem;
+  margin-bottom: 4rem;
+  max-height: 55rem;
+  max-width: 35rem;
+}
+@media (min-width: 768px) {
+  .testimoniales .card_testimonial {
+    margin: 0 1rem;
+  }
+}
+.testimoniales .card_testimonial picture {
+  border-radius: 50%;
+  margin: 2rem auto;
+  overflow: hidden;
+  width: 20rem;
+  height: 20rem;
+  box-shadow: 10px 10px 20px -2px rgba(118, 118, 122, 0.69);
+}
+.testimoniales .card_testimonial picture img {
+  height: 100%;
+  width: auto;
+}
+.testimoniales .card_testimonial h3 {
+  font-size: 3rem;
+  color: #1b1b1b;
+  margin: 1rem auto;
+  text-transform: uppercase;
+}
+.testimoniales .card_testimonial h4 {
+  font-size: 2.4rem;
+  margin: 1rem auto;
+}
+.testimoniales .card_testimonial p {
+  color: #1b1b1b;
+  font-style: italic;
+  margin: 2rem 4rem;
+}
+.testimoniales .card_testimonial .car_star {
+  font-size: 4rem;
+  letter-spacing: 1.5rem;
+  margin: 1rem auto;
+}
+.testimoniales .card_testimonial .car_star span {
+  color: #efb810;
+  margin: 0;
+}
+
+.whatsapp {
+  position: sticky;
+}
+.whatsapp .fab {
+  padding: 20px;
+  font-size: 30px;
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+.whatsapp .fab:hover {
+  opacity: 0.7;
+}
+.whatsapp .fa-whatsapp {
+  background: #45ff55;
+  color: white;
 }
 
 .footer {
@@ -897,16 +998,15 @@ header {
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  .formulario__contacto {
+  .formulario__contacto .formulario {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10rem;
+    align-content: center;
   }
   .formulario__contacto picture {
     display: block;
     width: 50%;
+    max-height: 45rem;
     overflow: hidden;
     border-radius: 0.5rem;
   }
@@ -1062,4 +1162,56 @@ fieldset textarea {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
+}
+
+.ugly {
+  text-align: center;
+  color: #d4d4d4;
+  text-transform: uppercase;
+}
+.ugly p {
+  text-align: start;
+  margin-top: 3rem;
+}
+
+@media (min-width: 480px) {
+  .integrantes-ugly {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .integrantes-ugly {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
+
+.tarjeta-ugly {
+  position: relative;
+}
+.tarjeta-ugly h3 {
+  color: #d4d4d4;
+  text-transform: uppercase;
+  position: absolute;
+  left: 35%;
+  bottom: 15%;
+  margin: 0;
+  padding: 0;
+}
+.tarjeta-ugly img {
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  height: 34rem;
+}
+@media (min-width: 992px) {
+  .tarjeta-ugly img {
+    height: 25rem;
+  }
+}
+
+.video_ugly {
+  display: none;
 }

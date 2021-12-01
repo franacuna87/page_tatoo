@@ -27,8 +27,8 @@
           <picture class="animate__animated animate__zoomInDown">
             <source srcset="../build/img/logoAdrianCrow_grey.avif" type="image/avif">
             <source srcset="../build/img/logoAdrianCrow_grey.webp" type="image/webp">
-            <img loading="lazy" width="200" height="200" src="../build/img/logoAdrianCrow_grey.png" alt="logo Adrian Crow"
-              title="Logo Adrian Crow">
+            <img loading="lazy" width="200" height="200" src="../build/img/logoAdrianCrow_grey.png"
+              alt="logo Adrian Crow" title="Logo Adrian Crow">
           </picture>
         </a>
         <a href="../index.html">
@@ -66,96 +66,72 @@
 
 
   <main class="formulario__contacto contenedor">
-
-
-    <picture>
-      <source srcset="../build/img/adrian_face.avif" type="image/avif">
-      <source srcset="../build/img/adrian_face.webp" type="image/webp">
-      <img loading="lazy" width="200" height="200" src="../build/img/adrian_face.png" alt="seminario Black and Grey"
-        title="seminarios Black and Grey">
-    </picture>
-
-    <form class="contenedor" action="#" method="post" enctype="application/x-www-form-urlencoded">
-      <fieldset class="datos_personales ">
-        <div>
-          <div class="form__datosPersonales">
-            <label for="name">Nombre</label>
-            <input type="text" name="" id="name" required />
-          </div>
-          <div class="form__datosPersonales">
-            <label for="mail">Contacto</label>
-            <input type="email" name="" id="mail" required />
-          </div>
-        </div>
-        <div>
-          <div class="form__datosPersonales">
-            <label for="surname">Apellido</label>
-            <input type="text" name="" id="surname" required />
-          </div>
-          <div class="form__datosPersonales">
-            <label for="cel">Teléfono</label>
-            <input type="tel" name="" id="cel" required />
-          </div>
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <div class="form__layout">
+    <h2>Contacto</h2>
+    <div class="formulario">
+      <picture>
+        <source srcset="../build/img/portada_contacto.avif" type="image/avif">
+        <source srcset="../build/img/portada_contacto.webp" type="image/webp">
+        <img loading="lazy" width="200" height="200" src="../build/img/portada_contacto.png"
+          alt="seminario Black and Grey" title="seminarios Black and Grey">
+      </picture>
+  
+      <form class="contenedor" action="#" method="post" enctype="application/x-www-form-urlencoded">
+        <fieldset class="datos_personales ">
           <div>
-            <p>Elegí tu estilo</p>
-            <select name="estilos" id="estilos">
-              <option value="blackwork">Blackwork</option>
-              <option value="tradicional">Old School</option>
-              <option value="neoTradicional">New School</option>
-              <option value="Dotwork">Dotwork</option>
-              <option value="blakAndGrey">Black &amp; Grey</option>
-              <option value="acuarela">Acuarela</option>
-              <option value="japones">Japonés</option>
-              <option value="realista">Realista</option>
-              <option value="Ornamental">Ornamental</option>
-              <option value="tribal">Tribal</option>
-              <option value="gotico">Gótico</option>
-              <option value="brush">Brush</option>
-            </select>
+            <div class="form__datosPersonales">
+              <label for="name">Nombre</label>
+              <input type="text" name="" id="name" required />
+            </div>
+            <div class="form__datosPersonales">
+              <label for="cel">Teléfono</label>
+              <input type="tel" name="" id="cel" required />
+            </div>
           </div>
-          <div>
-            <p>Elegi tu tatuador</p>
-            <select name="tatuador" id="tatuador">
-              <option value="adrian">Adrian</option>
-              <option value="belen">Belu</option>
-              <option value="facundo">Facu</option>
-              <option value="marianela">Marianela</option>
-            </select>
+        </fieldset>
+        <fieldset>
+          <div class="form__layout">
+            <div>
+              <p>Elegí tu estilo</p>
+              <select name="estilos" id="estilos">
+                <option value="blackwork">Blackwork</option>
+                <option value="tradicional">Old School</option>
+                <option value="neoTradicional">New School</option>
+                <option value="Dotwork">Dotwork</option>
+                <option value="blakAndGrey">Black &amp; Grey</option>
+                <option value="acuarela">Acuarela</option>
+                <option value="japones">Japonés</option>
+                <option value="realista">Realista</option>
+                <option value="Ornamental">Ornamental</option>
+                <option value="tribal">Tribal</option>
+                <option value="gotico">Gótico</option>
+                <option value="brush">Brush</option>
+              </select>
+            </div>
+            <div>
+              <p>Elegi tu tatuador</p>
+              <select name="tatuador" id="tatuador">
+                <option value="adrian">Adrian</option>
+                <option value="belen">Belu</option>
+                <option value="facundo">Facu</option>
+                <option value="marianela">Marianela</option>
+              </select>
+            </div>
           </div>
-        </div>
-        <div class="form__layout">
-          <div class="form__alegias">
-            <p>Alergías</p>
-            <input type="radio" name="alergia" id="si">
-            <label for="si">Si</label>
-            <input type="radio" name="alergia" id="no">
-            <label for="no">No</label>
-          </div>
-          <textarea name="alergia" id="" cols="30" rows="10" placeholder="especificá tu alergía"></textarea>
-        </div>
-        <div>
-          <p>¿Eres mayor de edad?</p>
-          <input type="checkbox" name="mayor" id="si">
-          <label for="si">Si</label>
-          <input type="checkbox" name="menor" id="no">
-          <label for="no">No</label>
-        </div>
-        <p>En caso de ser necesrio podes agregar un comentario para ayudarnos a mejorar tu presupuesto.
-        </p>
-        <textarea name="cuerpo" id="cuerpo" cols="30" rows="10"
-          placeholder="Aquí podes especificar mas sobre tu consulta"></textarea>
-      </fieldset>
-      <input class="boton" type="submit" name="" value="Enviar" id="">
-      <input class="boton_limpiar" type="reset" name="" value="Limpiar" id="">
-    </form>
-
-
+  
+          <p>En caso de ser necesrio podes agregar un comentario para ayudarnos a mejorar tu presupuesto.
+          </p>
+          <textarea name="cuerpo" id="cuerpo" cols="30" rows="10"
+            placeholder="Aquí podes especificar mas sobre tu consulta"></textarea>
+        </fieldset>
+        <input class="boton" type="submit" name="" value="Enviar" id="">
+      </form>
+    </div>
+    
   </main>
+
+
+
+  
   <footer class="footer ">
     <div>
       <nav class="navegacion-footer contenedor">
@@ -196,7 +172,7 @@
       <img src="img/logoUglyBoys.png" alt="logo Ugly Boys Tattoo Studio" title="logo Ugly Boys Tattoo Studio" />
     </div> -->
   </footer>
-  <script src= "../build/js/script.js"></script>
+  <script src="../build/js/script.js"></script>
 </body>
 
 </html>

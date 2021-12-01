@@ -9,6 +9,8 @@
     content="Página Personal de Tatuajes de Adrian Crow, aquí podras ver todos sus trabajos y cursos dicatados en su estudio junto a su grupo de tatuadores." />
   <meta name="keyword" content="tatuajes, Adrian Crow, cursos, seminarios, portfolio, equipo" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/48f70e22cf.js" crossorigin="anonymous"></script>
   <!-- Animacion logo -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,12 +56,15 @@
           <img loading="lazy" width="200" height="200" src="build/img/logoAdrianCrow_grey.png" alt="logo Adrian Crow"
             title="Logo Adrian Crow">
         </picture>
-        <h2>Adrian Crow</h2>
+        <div>
+               <h2>Adrian Crow</h2>
         <h3>black &amp; grey</h3>
-        <h3>tattoo studio</h3>
+        <h2>tattoo studio</h2>
+        </div>
+   
       </div>
     </a>
-    <ul class="nav-principal contenedor">
+    <ul class="nav-principal">
       <li><a href="index.html">Inicio</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#equipo">Team</a></li>
@@ -68,11 +73,13 @@
       <li><a href="pages/cuidados.html">Cuidados</a></li>
       <li><a href="pages/contacto.html">Contacto</a></li>
     </ul>
+    <span class="btn_menu"> <i class="fa fa-bars"></i> </span>
   </nav>
 
   <main>
     <section id="historia" class="historia">
-      <h2>Historia</h2>
+      <h2 class="marca-movil">Adiran Crow</h2>
+      <h2 class="marca-movil">Tattoo Studio</h2>
       <div class="section__historia-adrian">
         <article class="article__historia-adrian contenedor">
           <picture>
@@ -96,7 +103,7 @@
                 se le agregó humor.
               </p>
             </div>
-            <a class="boton" href="#">indagar más</a>
+            <a class="boton" href="pages/ugly.html">indagar más</a>
           </div>
         </article>
       </div>
@@ -245,7 +252,7 @@
       </div>
     </section>
 
-    <section id="seminarios" class="seminario">
+    <!-- <section id="seminarios" class="seminario">
       <h3 class="seminarios__titulo">Seminarios</h3>
       <div class="seminario__informacion">
         <div class="section__seminario-tarjeta contenedor">
@@ -283,19 +290,49 @@
           </div>
         </div>
       </div>
+    </section> -->
+    <section id="seminarios" class="cursos">
+      <h3>Seminarios</h3>
+      <div class="fondo_video">
+        <div>
+          <video class="video contenedor" autoplay muted loop>
+            <source src="video/adrian1.mp4" type="video/mp4">
+            <source src="video/adrian1.ogg" type="video/ogg">
+            <source src="video/adrian1.webm" type="video/webm">
+          </video>
+        </div>
+        <article class="curso__contenido contenedor">
+          <div class="curso__informacion">
+            <h3 class="cursos__subtitulo">Black &amp; Grey</h3>
+            <p class="curso__descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              ipsum voluptatibus alias neque aut! Doloremque numquam eius.
+            </p>
+            <a class="boton" href="pages/seminarios.html#bg">Ver mas</a>
+          </div>
+          <div class="curso__informacion">
+            <h3 class="cursos__subtitulo">Bioseguridad</h3>
+            <p class="curso__descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              ipsum voluptatibus alias neque aut! Doloremque numquam eius.
+            </p>
+            <a class="boton" href="pages/seminarios.html#bio">Ver mas</a>
+          </div>
+        </article>
+      </div>
     </section>
-
-
-
 
     <section id="cursos" class="cursos">
       <h3>cursos</h3>
       <div class="fondo_video">
-        <video class="video contenedor" autoplay muted loop>
-          <source src="video/adrian1.mp4" type="video/mp4">
-          <source src="video/adrian1.ogg" type="video/ogg">
-          <source src="video/adrian1.webm" type="video/webm">
-        </video>
+        <div class="contenedor">
+          <picture>
+            <source srcset="build/img/curso_photo.avif" type="image/avif">
+            <source srcset="build/img/curso_photo.webp" type="image/webp">
+            <img loading="lazy" width="200" height="200" src="build/img/curso_photo.png"
+              alt="seminario Bioseguridad" title="cursos">
+          </picture>
+      </div>
         <article class="curso__contenido contenedor">
           <div class="curso__informacion">
             <h3 class="cursos__subtitulo">Photoshop</h3>
@@ -303,7 +340,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
               ipsum voluptatibus alias neque aut! Doloremque numquam eius.
             </p>
-            <a class="boton" href="pages/cursos.html#bioseguridad">Ver mas</a>
+            <a class="boton" href="pages/cursos.html#photoshop">Ver mas</a>
           </div>
           <div class="curso__informacion">
             <h3 class="cursos__subtitulo">Illustrator</h3>
@@ -311,13 +348,60 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
               ipsum voluptatibus alias neque aut! Doloremque numquam eius.
             </p>
-            <a class="boton" href="pages/cursos.html#bioseguridad">Ver mas</a>
+            <a class="boton" href="pages/cursos.html#illustrator">Ver mas</a>
           </div>
         </article>
-      </div>
-
+        
     </section>
 
+
+    <section class="testimoniales contenedor">
+      <h2>Testimoniales</h2>
+      <div class="tarjetas-testimoniales">
+        <div class="card_testimonial">
+          <picture>
+            <source srcset="build/img/testimoniales/daddy-yankee.avif" type="image/avif">
+            <source srcset="build/img/testimoniales/daddy-yankee.webp" type="image/webp">
+            <img loading="lazy" width="200" height="200" src="build/img/testimoniales/daddy-yankee.png" alt="foto Belen"
+              title="Belen">
+          </picture>
+          <h3>de los mejores!!</h3>
+          <p class="car_star"><span>&starf;&starf;&starf;&starf;</span>&starf;</p>
+          <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo velit iure dolores consequuntur aut
+            ipsa, culpa at repellat"</p>
+          <h4>Ramón Luis Ayala</h4>
+          <p>San Juan, Puerto Rico</p>
+        </div>
+        <div class="card_testimonial">
+          <picture>
+            <source srcset="build/img/testimoniales/Niki-Nikol.avif" type="image/avif">
+            <source srcset="build/img/testimoniales/Niki-Nikol.webp" type="image/webp">
+            <img loading="lazy" width="200" height="200" src="build/img/testimoniales/Niki-Nikol.png" alt="foto Belen"
+              title="Belen">
+          </picture>
+          <h3>Alto tatuador</h3>
+          <p class="car_star"><span>&starf;&starf;&starf;&starf;</span>&starf;</p>
+          <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo velit iure dolores consequuntur aut
+            ipsa, culpa at repellat"</p>
+          <h4>Nicole Denise</h4>
+          <p>Rosario, Argenitna</p>
+        </div>
+        <div class="card_testimonial">
+          <picture>
+            <source srcset="build/img/testimoniales/Nicky-Jam.avif" type="image/avif">
+            <source srcset="build/img/testimoniales/Nicky-Jam.webp" type="image/webp">
+            <img loading="lazy" width="200" height="200" src="build/img/testimoniales/Nicky-Jam.png" alt="foto Belen"
+              title="Belen">
+          </picture>
+          <h3>de otro Planeta</h3>
+          <p class="car_star"><span>&starf;&starf;&starf;&starf;&starf;</span></p>
+          <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo velit iure dolores consequuntur aut
+            ipsa, culpa at repellat"</p>
+          <h4>Nick Rivera</h4>
+          <p>Massachusetts, EEUU</p>
+        </div>
+      </div>
+    </section>
 
 
 
@@ -334,7 +418,14 @@
 
   </main>
 
+
   <footer class="footer ">
+
+   <section class="whatsapp">
+    <a class="fab fa-whatsapp" href="https://wa.me/5492616664239/?text=Hola%20Adian%20quería%20hacerte%20una%20consulta." target="_blank"></a>
+   </section>
+
+    
     <div>
       <nav class="navegacion-footer contenedor">
         <ul class="nav-footer">
